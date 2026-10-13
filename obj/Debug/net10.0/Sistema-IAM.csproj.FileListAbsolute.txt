@@ -22,7 +22,6 @@
 /workspaces/Sistema-IAM/obj/Debug/net10.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /workspaces/Sistema-IAM/obj/Debug/net10.0/scopedcss/bundle/Sistema-IAM.styles.css
 /workspaces/Sistema-IAM/obj/Debug/net10.0/scopedcss/projectbundle/Sistema-IAM.bundle.scp.css
-/workspaces/Sistema-IAM/obj/Debug/net10.0/compressed/6i2cgnpoh5-{0}-b9sayid5wm-b9sayid5wm.gz
 /workspaces/Sistema-IAM/obj/Debug/net10.0/compressed/n9kz5775kd-{0}-61n19gt1b8-61n19gt1b8.gz
 /workspaces/Sistema-IAM/obj/Debug/net10.0/compressed/6k8kdeaoms-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 /workspaces/Sistema-IAM/obj/Debug/net10.0/compressed/ky4qfdkcge-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -96,3 +95,5 @@
 /workspaces/Sistema-IAM/obj/Debug/net10.0/Sistema-IAM.pdb
 /workspaces/Sistema-IAM/obj/Debug/net10.0/Sistema-IAM.genruntimeconfig.cache
 /workspaces/Sistema-IAM/obj/Debug/net10.0/ref/Sistema-IAM.dll
+/workspaces/Sistema-IAM/bin/Debug/net10.0/Data/usuarios.json
+/workspaces/Sistema-IAM/obj/Debug/net10.0/compressed/6i2cgnpoh5-{0}-4imc4gd0yn-4imc4gd0yn.gz

@@ -1,50 +1,85 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Sistema_IAM</title>
-    <script type="importmap"></script>
+
+    <title>@ViewData["Title"] - Sistema IAM</title>
+
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Sistema_IAM.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/sistemas_usuarios.styles.css" asp-append-version="true" />
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Sistema_IAM</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+
+    <div class="d-flex min-vh-100">
+
+        <!-- MENU LATERAL -->
+        <aside class="sidebar bg-dark text-white d-flex flex-column">
+
+            <div class="sidebar-header p-3 border-bottom border-secondary">
+                <a asp-controller="Home" asp-action="Index" class="text-white text-decoration-none fw-bold fs-5">
+                    Sistema Usuarios
+                </a>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+
+            <nav class="nav flex-column p-3 gap-1">
+
+                <span class="sidebar-label text-uppercase text-secondary small mb-2">
+                    Principal
+                </span>
+
+                <a asp-controller="Usuarios" asp-action="Index" class="sidebar-link" data-ajax="true">
+                    <span class="me-2">♙</span> Usuarios
+                </a>
+
+            </nav>
+
+            <div class="mt-auto p-3 border-top border-secondary">
+                <span class="small text-secondary">
+                    Sistema de Usuarios · v1.0
+                </span>
+            </div>
+
+        </aside>
+
+        <!-- AREA DERECHA -->
+        <div class="main-area d-flex flex-column flex-grow-1">
+
+            <header class="topbar bg-white border-bottom px-4 py-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="mb-0 text-secondary">
+                            Panel de administración
+                        </h6>
+                    </div>
+
+                    <span class="small text-muted">
+                        Proyecto .NET MVC
+                    </span>
+                </div>
+            </header>
+
+            <main id="contenido-principal"
+                role="main"
+                class="content-area p-4 flex-grow-1">
+                @RenderBody()
+            </main>
+
+            <footer class="bg-white border-top text-muted px-4 py-3 small">
+                &copy; 2026 - Sistema de Usuarios
+            </footer>
+
+        </div>
+
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - Sistema_IAM - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>

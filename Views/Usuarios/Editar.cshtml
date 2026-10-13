@@ -1,0 +1,23 @@
+@model Sistema_IAM.ViewModels.UsuarioViewModel
+
+<h1>Editar Usuario</h1>
+
+<form asp-controller="Usuarios" asp-action="Actualizar" method="post">
+
+    <input asp-for="Id" type="hidden" />
+
+    <div>
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" />
+        <span asp-validation-for="Nombre"></span>
+    </div>
+
+    <div>
+        <label asp-for="Correo"></label>
+        <input asp-for="Correo" />
+        <span asp-validation-for="Correo"></span>
+    </div>
+
+    <button type="submit">Guardar cambios</button>
+
+</form>

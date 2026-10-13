@@ -1,0 +1,29 @@
+@model Sistema_IAM.ViewModels.UsuarioViewModel
+
+@{
+    Layout = Context.Request.Headers["X-Requested-With"] == "XMLHttpRequest"
+        ? null
+        : "_Layout";
+
+    ViewData["Title"] = "Nuevo usuario";
+}
+
+<h1>Crear Usuario</h1>
+
+<form asp-controller="Usuarios" asp-action="Registrar" method="post">
+
+    <div>
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" />
+        <span asp-validation-for="Nombre"></span>
+    </div>
+
+    <div>
+        <label asp-for="Correo"></label>
+        <input asp-for="Correo" />
+        <span asp-validation-for="Correo"></span>
+    </div>
+
+    <button type="submit">Registrar</button>
+
+</form>
