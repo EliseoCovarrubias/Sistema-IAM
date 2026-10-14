@@ -1,7 +1,9 @@
 [
   {
     "Id": 1,
-    "Nombre": "eliseo",
-    "Correo": "pruebas@hotmail.com"
+    "Nombre": "ELISEO",
+    "Correo": "pruebas@hotmail.com",
+    "IdEmpresa": 1,
+    "Empresa": null
   }
 ]

@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 // Registrar servicios
+builder.Services.AddScoped<EmpresaService>();
 builder.Services.AddScoped<UsuarioService>();
 
 var app = builder.Build();

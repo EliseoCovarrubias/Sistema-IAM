@@ -20,6 +20,7 @@
             <th scope="col">Id</th>
             <th scope="col">Nombre</th>
             <th scope="col">Correo</th>
+            <th scope="col">Empresa</th>
             <th scope="col">Acciones</th>
         </tr>
     </thead>
@@ -30,6 +31,7 @@
                 <td scope="row">@usuario.Id</td>
                 <td>@usuario.Nombre</td>
                 <td>@usuario.Correo</td>
+                <td>@usuario.Empresa</td>
                 <td>
                     <a asp-controller="Usuarios" asp-action="Editar" asp-route-id="@usuario.Id" class="btn btn-sm btn-primary me-2">
                         Editar

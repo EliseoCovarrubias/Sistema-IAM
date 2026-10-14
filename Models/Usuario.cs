@@ -7,6 +7,10 @@ namespace Sistema_IAM.Models
         public string Nombre { get; set; }
 
         public string Correo { get; set; }
+
+        public int IdEmpresa { get; set; }
+
+        public Empresa? Empresa { get; set; }
     }
 }
 

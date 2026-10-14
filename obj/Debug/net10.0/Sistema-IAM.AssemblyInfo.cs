@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sistema-IAM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57a2b42212b973d344c9d7c01ee24930964c6d6a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e418c7549df288d00d3e5fecbff05240f4771ca9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sistema-IAM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sistema-IAM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

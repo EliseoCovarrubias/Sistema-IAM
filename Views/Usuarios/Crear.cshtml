@@ -24,6 +24,18 @@
         <span asp-validation-for="Correo"></span>
     </div>
 
+    <div class="mb-3">
+        <label asp-for="IdEmpresa" class="form-label">Empresa</label>
+
+        <select asp-for="IdEmpresa"
+                asp-items="ViewBag.Empresas"
+                class="form-select">
+            <option value="">Selecciona una empresa</option>
+        </select>
+
+        <span asp-validation-for="IdEmpresa" class="text-danger"></span>
+    </div>
+
     <button type="submit">Registrar</button>
 
 </form>

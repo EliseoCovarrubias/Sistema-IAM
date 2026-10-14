@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "Id": 1,
+    "Nombre": "ELISEO",
+    "Correo": "pruebas@hotmail.com",
+    "IdEmpresa": 1,
+    "Empresa": null
+  }
+]

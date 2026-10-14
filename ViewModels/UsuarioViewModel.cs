@@ -1,4 +1,6 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.ComponentModel.DataAnnotations;
 
 namespace Sistema_IAM.ViewModels
 {
@@ -12,5 +14,10 @@ namespace Sistema_IAM.ViewModels
         [Required(ErrorMessage = "El correo es obligatorio")]
         [EmailAddress(ErrorMessage = "El correo no es válido")]
         public string Correo { get; set; }
+
+        [Required(ErrorMessage = "Selecciona una empresa.")]
+        public int? IdEmpresa { get; set; }
+
+        public string? Empresa { get; set; }
     }
 }

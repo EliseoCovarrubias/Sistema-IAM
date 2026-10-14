@@ -97,3 +97,4 @@
 /workspaces/Sistema-IAM/obj/Debug/net10.0/ref/Sistema-IAM.dll
 /workspaces/Sistema-IAM/bin/Debug/net10.0/Data/usuarios.json
 /workspaces/Sistema-IAM/obj/Debug/net10.0/compressed/6i2cgnpoh5-{0}-4imc4gd0yn-4imc4gd0yn.gz
+/workspaces/Sistema-IAM/bin/Debug/net10.0/Data/empresas.json
